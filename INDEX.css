@@ -200,7 +200,7 @@ i.fa-play-circle,
 i.fa-pause-circle,
 i.fa-step-forward,
 i.fa-step-backward {
-  padding:0 4rem ;
+  padding:0 10% ;
   cursor: pointer;
 }
 .randomActive {
@@ -331,4 +331,41 @@ i.fa-step-backward {
 }
 .stroke:nth-child(7){
   animation-delay: 0s;
+}
+@media screen and (max-width:700px) and (min-width:400px){
+  .wraper{
+    width: 100%;
+  }
+}
+@media(max-width:400px) {
+  .wraper{
+    width: 100%;
+  }
+  .container{animation: borderchange 5s infinite linear;}
+  @keyframes borderchange {
+    0% {
+      border-left: 10px solid#fa0000;
+      border-right: 10px solid#fa0000;
+    }
+    20% {
+      border-left: 10px solid #e300f7;
+      border-right: 10px solid #e300f7;
+    }
+    40% {
+      border-left: 10px solid #0c04f6;
+      border-right: 10px solid #0c04f6;
+    }
+    60% {
+      border-left: 10px solid #04f659;
+      border-right: 10px solid #04f659;
+    }
+    80% {
+      border-left: 10px solid #f6ee04;
+      border-right: 10px solid #f6ee04;
+    }
+    100% {
+      border-left: 10px solid #f66d04;
+      border-right: 10px solid #f66d04;
+    }
+  }
 }
